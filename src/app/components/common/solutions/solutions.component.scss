@@ -1,0 +1,208 @@
+.plor-solutions-area {
+    overflow: hidden;
+
+    .container-fluid {
+        overflow: hidden;
+        padding: {
+            left: 0;
+            right: 0;
+        };
+    }
+}
+.plor-solutions-image {
+    position: relative;
+
+    .video-btn {
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+        position: absolute;
+        right: 0;
+        bottom: 90px;
+        text-align: center;
+        border-radius: 50%;
+        display: inline-block;
+        color: var(--whiteColor);
+        background: linear-gradient(270deg, #FE881C -12.37%, #FE4C1C 100%);
+        transition: var(--transition);
+
+        i {
+            left: 0;
+            right: 0;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            margin: auto;
+        }
+        &::after, &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            border: 1px solid var(--mainColor);
+        }
+        &::before {
+            animation: ripple 2s linear infinite;
+        }
+        &::after {
+            animation: ripple 2s linear 1s infinite;
+        }
+        &:hover {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+}
+.plor-solutions-content {
+    max-width: 650px;
+    padding-left: 50px;
+
+    span {
+        color: var(--mainColor);
+        font-size: var(--fontSize);
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+    h3 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        background: linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    p {
+        color: var(--optionalColor);
+        margin-bottom: 0;
+    }
+    .solutions-inner-content {
+        padding: 25px 35px;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: {
+            top: 1px solid #EAEAF9;
+            bottom: 1px solid #EAEAF9;
+            right: 1px solid #EAEAF9;
+            left: 2px solid var(--mainColor);
+        };
+        h4 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        p {
+            color: var(--optionalColor);
+            margin-bottom: 0;
+        }
+        &.color-two {
+            border: {
+                left: 2px solid #04C8EB;
+            };
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .plor-solutions-image {
+        .video-btn {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 25px;
+            right: 50px;
+            bottom: 20px;
+        }
+    }
+    .plor-solutions-content {
+        margin-top: 30px;
+        max-width: 540px;
+        padding: {
+            left: 10px;
+            right: 10px;
+        };
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        .solutions-inner-content {
+            h4 {
+                font-size: 20px;
+            }  
+        }      
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .plor-solutions-image {
+        .video-btn {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 25px;
+            right: 50px;
+            bottom: 20px;
+        }
+    }
+    .plor-solutions-content {
+        margin-top: 30px;
+        max-width: 740px;
+        padding: {
+            left: 10px;
+            right: 10px;
+        };
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        .solutions-inner-content {
+            h4 {
+                font-size: 20px;
+            }  
+        }      
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .plor-solutions-content {
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .plor-solutions-content {
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+    .plor-solutions-image {
+        .video-btn {
+            right: 95px;
+        }
+    }
+    .plor-solutions-content {
+        padding-left: 0;
+    }
+
+}

@@ -1,0 +1,73 @@
+.plor-get-started-area {
+    background-color: #EAEAF9;
+    overflow: hidden;
+}
+.plor-get-started-content {
+    span {
+        color: var(--mainColor);
+        display: inline-block;
+        margin-bottom: 18px;
+        font: {
+            size: var(--fontSize);
+            weight: 500;
+        };
+    }
+    h3 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        background: linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    p {
+        color: var(--optionalColor);
+        margin-bottom: 0;
+    }
+    .get-started-btn {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .plor-get-started-image {
+        text-align: center;
+    }
+    .plor-get-started-content {
+        margin-top: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .plor-get-started-image {
+        text-align: center;
+    }
+    .plor-get-started-content {
+        margin-top: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 1550px) {}

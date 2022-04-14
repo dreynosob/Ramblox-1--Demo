@@ -1,0 +1,122 @@
+.plor-team-card {
+    margin-bottom: 30px;
+
+    .team-image {
+        display: inline-block;
+        position: relative;
+
+        img {
+            border-radius: 30px;
+        }
+        .social-link {
+            right: 30px;
+            bottom: 55px;
+            padding-left: 0;
+            margin-bottom: 0;
+            position: absolute;
+            list-style-type: none;
+    
+            li {
+                display: block;
+                margin-bottom: 8px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    color: var(--blackColor);
+                    background-color: var(--whiteColor);
+                    font-size: 18px;
+                    position: relative;
+                    border-radius: 50px;
+                    transform: scaleY(0);
+                    transition: .4s;
+    
+                    i {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-48%);
+                    }
+                    &:hover {
+                        background-color: var(--mainColor);
+                        color: var(--whiteColor);
+                    }
+                }
+                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
+                    a {
+                        transform: scaleX(0);
+                    }
+                }
+            }
+        }
+    }
+    .team-content {
+        margin-top: 30px;
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 0;
+            color: var(--blackColor);
+            font-weight: 700;
+        }
+        span {
+            display: inline-block;
+            margin-top: 15px;
+            color: #4B5280;
+        }
+    }
+    &:hover {
+        .team-image {
+            .social-link {
+                li {
+                    a {
+                        transform: scale(1) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.plor-team-bottom-text {
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        color: var(--optionalColor);
+        border-bottom: 1px solid var(--optionalColor);
+        font-weight: 600;
+
+        &:hover {
+            color: var(--mainColor);
+            border-bottom: 1px solid var(--mainColor);
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .plor-team-card {
+        .team-content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 1550px) {}

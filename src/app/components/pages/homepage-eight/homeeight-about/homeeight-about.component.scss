@@ -1,0 +1,200 @@
+.plor-about-area {
+    position: relative;
+    z-index: 11;
+}
+.plor-about-content {
+    padding-left: 45px;
+
+    span {
+        color: var(--mainColor);
+        font-size: var(--fontSize);
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+    h3 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        background: linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    p {
+        color: var(--optionalColor);
+        margin-bottom: 0;
+    }
+    .about-list {
+        padding: 0;
+        margin: {
+            top: 25px;
+            bottom: 25px;
+        };
+        li {
+            list-style-type: none;
+            margin-bottom: 15px;
+            color: var(--blackColor);
+            font-size: 18px;
+            font-weight: 600;
+            list-style-type: none;
+
+            span {
+                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: 600;
+                background: linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+.plor-about-image {
+    position: relative;
+
+    .wrap-content {
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        content: "";
+        width: 252px;
+        height: 252px;
+        background: linear-gradient(270deg, #FE881C -12.37%, #FE4C1C 100%);
+        border: 8px solid var(--whiteColor);
+        border-radius: 50%;
+        padding: 75px 20px;
+        text-align: center;
+
+        p {
+            color: var(--whiteColor);
+        }
+    }
+}
+.plor-overview-area {
+    overflow: hidden;
+
+    .container-fluid {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+    }
+}
+.overview-animate-text {
+    animation: text-scrolling 20s linear infinite;
+    text-align: center;
+    animation-direction: reverse;
+    
+    span {
+        display: inline-block;
+        min-width: 100%;
+        font-weight: 900;
+        color: var(--blackColor);
+        font-size: 60px;
+        transform: scale(1.7);
+
+        strong {
+            filter: url('#stroke-text'); 
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .plor-about-image {
+        text-align: center;
+    }
+    .plor-about-content {
+        padding-left: 0;
+        margin-top: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        .about-list {
+            li {
+                font-size: 15px;
+
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .overview-animate-text {
+        span {
+            font-size: 25px;
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .plor-about-image {
+        text-align: center;
+    }
+    .plor-about-content {
+        padding-left: 0;
+        margin-top: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        .about-list {
+            li {
+                font-size: 15px;
+
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .overview-animate-text {
+        span {
+            font-size: 55px;
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .overview-animate-text {
+        span {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .overview-animate-text {
+        span {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+    .overview-animate-text {
+        span {
+            font-size: 85px;
+        }
+    }
+
+}
