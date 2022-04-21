@@ -130,6 +130,11 @@
         }
         .default-btn {
             border-radius: 0;
+            color: var(--whiteColor);
+            &:hover {
+                transform: scale(0.8, 0.8);
+
+            }
 
             &::before {
                 border-radius: 0;
