@@ -1,5 +1,6 @@
 .project-start-content {
     padding-left: 30px;
+   
 
     .sub-title {
         display: block;
@@ -7,7 +8,7 @@
         color: var(--mainColor);
         text-transform: uppercase;
         font: {
-            size: 15.5px;
+            size: 18px;
             weight: 700;
         };
     }
@@ -20,6 +21,11 @@
     }
     .default-btn {
         margin-top: 5px;
+        color: var(--whiteColor);
+        &:hover {
+            transition: var(--transition);
+            transform: scale(0.8,0.8);
+        }
     }
 }
 

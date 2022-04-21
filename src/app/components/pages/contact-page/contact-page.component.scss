@@ -77,6 +77,11 @@
         }
         .default-btn {
             margin-top: 5px;
+            color: var(--whiteColor);
+            &:hover {
+                transform: scale(0.8, 0.8);
+
+            }
         }
     }
 }

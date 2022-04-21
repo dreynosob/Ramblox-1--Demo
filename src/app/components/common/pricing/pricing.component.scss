@@ -117,6 +117,16 @@
     }
     .default-btn {
         margin-top: 20px;
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+
+        &::before {
+            background-color: #1fa299;
+        }
+        &:hover {
+            color: var(--whiteColor);
+        }
+       
     }
 }
 .col-lg-4 {

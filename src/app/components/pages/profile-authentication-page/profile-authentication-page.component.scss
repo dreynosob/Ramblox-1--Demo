@@ -137,6 +137,7 @@
             &:hover {
                 background-color: var(--blackColor);
                 color: var(--whiteColor);
+                transform: scale(0.8, 0.8);
             }
         }
     }
@@ -189,6 +190,7 @@
             &:hover {
                 background-color: var(--blackColor);
                 color: var(--whiteColor);
+                transform: scale(0.8, 0.8);
             }
         }
     }

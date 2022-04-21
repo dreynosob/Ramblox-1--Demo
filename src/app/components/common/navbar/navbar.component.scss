@@ -26,7 +26,7 @@
     }
     &.navbar-color-white {
         &.is-sticky {
-            background-color: var(--blackColor) !important;
+            background-color: var(--redColor) !important;
         }
     }
 }
@@ -82,7 +82,7 @@
                     right: 15px;
                 };
                 a {
-                    color: var(--blackColor);
+                    color: var(--blackNavbar);
                     font: {
                         size: 17.5px;
                         weight: 700;
@@ -143,7 +143,7 @@
                             padding: 10px 20px;
                             position: relative;
                             display: block;
-                            color: var(--blackColor);
+                            color: var(--blackNavbar);
                             font: {
                                 size: 16.5px;
                                 weight: 700;
@@ -169,7 +169,7 @@
                             
                             li {
                                 a {
-                                    color: var(--blackColor);
+                                    color: var(--blackNavbar);
                                     
                                     &:hover, &:focus, &.active {
                                         color: var(--mainColor);
@@ -183,7 +183,7 @@
         
                                     li {
                                         a {
-                                            color: var(--blackColor);
+                                            color: var(--blackNavbar);
         
                                             &:hover, &:focus, &.active {
                                                 color: var(--mainColor);
@@ -197,7 +197,7 @@
                 
                                             li {
                                                 a {
-                                                    color: var(--blackColor);
+                                                    color: var(--blackNavbar);
                 
                                                     &:hover, &:focus, &.active {
                                                         color: var(--mainColor);
@@ -211,7 +211,7 @@
                         
                                                     li {
                                                         a {
-                                                            color: var(--blackColor);
+                                                            color: var(--blackNavbar);
                 
                                                             &:hover, &:focus, &.active {
                                                                 color: var(--mainColor);
@@ -225,7 +225,7 @@
                                 
                                                             li {
                                                                 a {
-                                                                    color: var(--blackColor);
+                                                                    color: var(--blackNavbar);
                 
                                                                     &:hover, &:focus, &.active {
                                                                         color: var(--mainColor);
@@ -239,7 +239,7 @@
                                         
                                                                     li {
                                                                         a {
-                                                                            color: var(--blackColor);
+                                                                            color: var(--blackNavbar);
                 
                                                                             &:hover, &:focus, &.active {
                                                                                 color: var(--mainColor);
@@ -336,10 +336,14 @@
             }
         }
         .others-option {
-            background-color: var(--mainColor);
+           // background-color: #080e32;
             border-radius: 30px;
             padding: 10px 18px 3px;
             margin-left: 30px;
+            &:hover{
+                background-color: var(--othersOptions);
+                transition: var(--transition);
+            }
 
             .option-item {
                 margin-left: 15px;
@@ -351,9 +355,11 @@
                     position: absolute;
                     left: -2px;
                     top: -4px;
-                    background-color: #fa6a45;
+                    background-color: var(--blackNavbar);
                     height: 25px;
                     width: 1.5px;
+
+                    
                 }
                 &:first-child {
                     margin-left: 0;
@@ -372,10 +378,11 @@
                     top: 4px;
                     line-height: 0;
                     transition: var(--transition);
-                    color: var(--whiteColor);
+                    color: #050505;
 
                     &:hover {
                         color: var(--whiteColor);
+                        
                     }
                 }
             }
@@ -383,13 +390,15 @@
                 i {
                     cursor: pointer;
                     font-size: 22px;
-                    color: var(--whiteColor);
+                    color: #050505;
                     position: relative;
                     top: -2px;
                     line-height: 1;
                     transition: var(--transition);
+                    
 
                     &:hover {
+                        
                         color: var(--whiteColor);
                     }
                 }
@@ -412,7 +421,7 @@
                         text-align: center;
                         line-height: 20px;
                         border-radius: 50%;
-                        background-color: var(--blackColor);
+                        background-color: var(--blackNavbar);
                         font: {
                             size: 14px;
                             weight: 600;
@@ -443,7 +452,7 @@
                     .dropdown-menu {    
                         li {                            
                             a {
-                                color: var(--blackColor);
+                                color: var(--blackNavbar);
                                 
                                 &:hover, &:focus, &.active {
                                     color: var(--mainColor);
@@ -452,7 +461,7 @@
                             .dropdown-menu {
                                 li {
                                     a {
-                                        color: var(--blackColor);
+                                        color: var(--blackNavbar);
                                         
                                         &:hover, &:focus, &.active {
                                             color: var(--mainColor);
@@ -461,7 +470,7 @@
                                     .dropdown-menu {
                                         li {
                                             a {
-                                                color: var(--blackColor);
+                                                color: var(--blackNavbar);
             
                                                 &:hover, &:focus, &.active {
                                                     color: var(--mainColor);
@@ -470,7 +479,7 @@
                                             .dropdown-menu {
                                                 li {
                                                     a {
-                                                        color: var(--blackColor);
+                                                        color: var(--blackNavbar);
                     
                                                         &:hover, &:focus, &.active {
                                                             color: var(--mainColor);
@@ -479,7 +488,7 @@
                                                     .dropdown-menu {
                                                         li {
                                                             a {
-                                                                color: var(--blackColor);
+                                                                color: var(--blackNavbar);
                     
                                                                 &:hover, &:focus, &.active {
                                                                     color: var(--mainColor);
@@ -488,7 +497,7 @@
                                                             .dropdown-menu {
                                                                 li {
                                                                     a {
-                                                                        color: var(--blackColor);
+                                                                        color: var(--blackNavbar);
                     
                                                                         &:hover, &:focus, &.active {
                                                                             color: var(--mainColor);
@@ -497,7 +506,7 @@
                                                                     .dropdown-menu {
                                                                         li {
                                                                             a {
-                                                                                color: var(--blackColor);
+                                                                                color: var(--blackNavbar);
                     
                                                                                 &:hover, &:focus, &.active {
                                                                                     color: var(--mainColor);
@@ -584,7 +593,7 @@
                 border-radius: 100%;
                 margin: 0 2px;
                 transition: var(--transition);
-                background-color: var(--blackColor);
+                background-color: var(--blackNavbar);
             }
         }
         &:hover {
@@ -701,7 +710,7 @@
                         text-align: center;
                         line-height: 20px;
                         border-radius: 50%;
-                        background-color: var(--blackColor);
+                        background-color: var(--blackNavbar);
                         font: {
                             size: 14px;
                             weight: 600;
@@ -818,7 +827,7 @@
                         text-align: center;
                         line-height: 20px;
                         border-radius: 50%;
-                        background-color: var(--blackColor);
+                        background-color: var(--blackNavbar);
                         font: {
                             size: 14px;
                             weight: 600;

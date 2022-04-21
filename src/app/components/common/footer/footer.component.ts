@@ -14,8 +14,8 @@ export class FooterComponent implements OnInit {
 
     copyrightText: Text[] = [
         {
-            text: '2022 Plor is Proudly Powered by',
-            linkText: 'EnvyTheme',
+            text: '2022 Desarrollada por',
+            linkText: 'Ramblox, Software & Digital Marketing',
             link: 'https://envytheme.com/'
         }
     ]

@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     --fontFamily: 'Nunito', sans-serif;
-    --mainColor: #fe4c1c;
+    --mainColor: #f90404fd;
     --optionalColor: #4b5280;
     --whiteColor: #ffffff;
-    --blackColor: #080e32;
+    --blackColor: #df0707f6;
+    --blackNavbar: #050505;
     --fontSize: 16px;
     --transition: .5s;
+    --othersOptions:#f90404dd;
+   
 }
 body {
     padding: 0;
@@ -22,7 +25,7 @@ body {
     };
 }
 a {
-    color: var(--blackColor);
+    color: var(--blackNavbar);
     transition: var(--transition);
     text-decoration: none;
     outline: 0 !important;
@@ -87,6 +90,7 @@ p {
 
 /*section-title*/
 .section-title {
+    
     max-width: 720px;
     text-align: center;
     margin: {
@@ -142,7 +146,7 @@ p {
     padding: 10px 30px;
     position: relative;
     z-index: 1;
-    color: var(--whiteColor);
+    color: var(--mainColor);
     background-color: var(--blackColor);
     font: {
         size: 17px;
@@ -156,7 +160,7 @@ p {
         top: 0;
         bottom: 0;
         border-radius: 5px;
-        background-color: var(--mainColor);
+        //background-color: var(--mainColor);
         z-index: -1;
         transition: var(--transition);
     }
@@ -855,7 +859,7 @@ textarea.form-control {
                         top: 0;
                         right: 0;
                         bottom: 0;
-                        background-color: var(--mainColor);
+                        background-color: var(--whiteColor);
                         border-radius: 50%;
                         margin: 2px;
                         opacity: 0;
@@ -865,7 +869,7 @@ textarea.form-control {
                 }
                 &:hover, &.active {
                     span {
-                        border-color: var(--mainColor);
+                        border-color: var(--whiteColor);
 
                         &::before {
                             opacity: 1;
