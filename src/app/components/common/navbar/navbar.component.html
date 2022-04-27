@@ -33,17 +33,17 @@
                                 <li class="nav-item"><a routerLink="/home-ten" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - 10</a></li>-->
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="javascript:void(0)" routerLinkActive="active" class="nav-link">Nosotros<!-- <i class='bx bx-chevron-down'></i>--></a>
-                            <ul class="dropdown-menu">
+                        <li class="nav-item"><a routerLink="/about-us-1" routerLinkActive="active" class="nav-link">Nosotros<!-- <i class='bx bx-chevron-down'></i>--></a>
+                            <!-- <ul class="dropdown-menu">
                                 <li class="nav-item"><a routerLink="/about-us-1" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Sobre nosotros</a></li>
-                                <!-- <li class="nav-item"><a routerLink="/about-us-2" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">About Us 2</a></li>-->
-                                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Equipo <!--<i class='bx bx-chevron-right'></i>--></a>
+                                <li class="nav-item"><a routerLink="/about-us-2" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">About Us 2</a></li>-->
+                                <!--<li class="nav-item"><a href="javascript:void(0)" class="nav-link">Equipo <i class='bx bx-chevron-right'></i></a>
                                     <ul class="dropdown-menu">
-                                        <!--<li class="nav-item"><a routerLink="/team-1" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Team 1</a></li>-->
+                                        <li class="nav-item"><a routerLink="/team-1" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Team 1</a></li>
                                         <li class="nav-item"><a routerLink="/team-2" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Team 2</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </li>
                         <li class="nav-item"><a href="javascript:void(0)" routerLink="/services-1" class="nav-link">Servicios <!--<i class='bx bx-chevron-down'></i>--></a>
                             <!--<ul class="dropdown-menu">
@@ -91,7 +91,7 @@
                                 <li class="nav-item"><a routerLink="/single-blog" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Blog Details</a></li>
                             </ul>
                         </li>-->
-                        <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Contacto</a></li>
+                        <li class="nav-item "><a routerLink="/contact" class="nav-link" id="activado" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" >Contacto</a></li>
                     </ul>
                     <div class="others-option d-flex align-items-center">
                        <!-- <div class="option-item">
@@ -101,12 +101,12 @@
                                     <span>1</span>
                                 </a>
                             </div>
-                        </div>-->
+                        </div>
                         <div class="option-item">
                             <div class="search-box">
                                 <i class="flaticon-search" (click)="searchToggleClass()"></i>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="option-item">
                             <div class="side-menu-btn">
                                 <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
@@ -161,50 +161,61 @@
             <button type="button" class="close" data-bs-dismiss="modal"><i class='bx bx-x'></i></button>
             <div class="modal-body">
                 <div class="logo">
-                    <a routerLink="/" class="d-inline-block"><img src="assets/img/logo.png" alt="image"></a>
+                    <a routerLink="/home-two" class="d-inline-block"><img src="assets/img/logo.png" alt="image"></a>
                 </div>
                 <div class="instagram-list">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="box">
                                 <img src="assets/img/team/team-img1.jpg" alt="image">
-                                <i class='bx bxl-instagram'></i>
-                                <a href="#" target="_blank" class="link-btn"></a>
+                                <!--<i class='bx bxl-instagram'></i>-->
+                               <i class="bx">Home</i>
+                                <a routerLink="/home-two" target="_blank" class="link-btn"></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="box">
                                 <img src="assets/img/team/team-img2.jpg" alt="image">
-                                <i class='bx bxl-instagram'></i>
-                                <a href="#" target="_blank" class="link-btn"></a>
+                                 <!--<i class='bx bxl-instagram'></i>-->
+                                 <i class="bx">About</i>
+                                <a routerLink="/about-us-1" target="_blank" class="link-btn"></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="box">
                                 <img src="assets/img/team/team-img3.jpg" alt="image">
-                                <i class='bx bxl-instagram'></i>
-                                <a href="#" target="_blank" class="link-btn"></a>
+                                 <!--<i class='bx bxl-instagram'></i>-->
+                                 <i class="bx">Services</i>
+                                <a routerLink="/services-1" target="_blank" class="link-btn"></a>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="box">
                                 <img src="assets/img/team/team-img4.jpg" alt="image">
-                                <i class='bx bxl-instagram'></i>
-                                <a href="#" target="_blank" class="link-btn"></a>
+                                <!--<i class='bx bxl-instagram'></i>-->
+                                <i class="bx">Login</i>
+                                <a routerLink="/profile-authentication"  target="_blank" class="link-btn"></a>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="box">
                                 <img src="assets/img/team/team-img5.jpg" alt="image">
-                                <i class='bx bxl-instagram'></i>
-                                <a href="#" target="_blank" class="link-btn"></a>
+                                <!--<i class='bx bxl-instagram'></i>-->
+                                <i class="bx">FAQ</i>
+                                <a routerLink="/faq" target="_blank" class="link-btn"></a>
+                               
                             </div>
                         </div>
+                       
+                       
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="box">
                                 <img src="assets/img/team/team-img6.jpg" alt="image">
-                                <i class='bx bxl-instagram'></i>
-                                <a href="#" target="_blank" class="link-btn"></a>
+                                <!--<i class='bx bxl-instagram'></i>-->
+                                <i class="bx">Contact</i>
+                                <a routerLink="/contact" target="_blank" class="link-btn"></a>
                             </div>
                         </div>
                     </div>
@@ -213,15 +224,15 @@
                     <h2>
                         <a href="tel:+11234567890">+1 (123) 456 7890</a>
                         <span>OR</span>
-                        <a href="mailto:hello@plor.com">hello@plor.com</a>
+                        <a href="mailto:hello@plor.com">ramblox@hotmail.com</a>
                     </h2>
                 </div>
                 <ul class="social-list">
-                    <li><span>Follow Us On:</span></li>
+                    <li><span>Siguenos:</span></li>
                     <li><a href="#" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                     <li><a href="#" target="_blank"><i class='bx bxl-twitter'></i></a></li>
                     <li><a href="#" target="_blank"><i class='bx bxl-youtube'></i></a></li>
-                    <li><a href="#" target="_blank"><i class='bx bxl-twitch'></i></a></li>
+                    <li><a href="#" target="_blank"><i class='bx bxl-instagram'></i></a></li>
                 </ul>
             </div>
         </div>
@@ -229,7 +240,7 @@
 </div>
 <!-- End Sidebar Modal -->
 
-<!-- Search Overlay -->
+<!-- Search Overlay-->
 <div class="search-overlay" [class.search-overlay-active]="searchClassApplied">
     <div class="d-table">
         <div class="d-table-cell">
@@ -240,13 +251,17 @@
                 <span class="search-overlay-close-line"></span>
                 <span class="search-overlay-close-line"></span>
             </div>
-            <div class="search-overlay-form">
+            <!--<div class="search-overlay-form">
                 <form>
                     <input type="text" class="input-search" placeholder="Search here...">
                     <button type="submit"><i class="flaticon-search"></i></button>
                 </form>
             </div>
-        </div>
+            
+        </div>-->
     </div>
 </div>
+</div>
+
+
 <!-- End Search Overlay -->

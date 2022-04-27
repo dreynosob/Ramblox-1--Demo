@@ -110,6 +110,7 @@
                     background-color: var(--mainColor);
                 }
                 &:hover {
+                    
                     &::before {
                         width: 0;
                     }
@@ -143,6 +144,7 @@
     }
 }
 .register-form {
+    box-shadow: 0 0 10px rgba(51,51,51,.1);
     padding: {
         top: 30px;
         left: 30px;

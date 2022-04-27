@@ -81,12 +81,32 @@
                     left: 15px;
                     right: 15px;
                 };
+               #activado{
+                   background-color: rgb(255,51,0);
+                   color: white;
+                   margin-top: 22px;
+                   padding: {
+                    left: 5px;
+                    right: 5px;
+                    top: 5px;
+                    bottom: 5px;
+                };
+                   border-radius: 10px;
+                   
+                   &:hover{
+                       color: var(--whiteColor);
+                       opacity: 0.6;
+                       transition: all .3s;
+                   }
+               }
                 a {
                     color: var(--blackNavbar);
                     font: {
                         size: 17.5px;
                         weight: 700;
                     };
+                 
+                    
                     padding: {
                         left: 0;
                         right: 0;

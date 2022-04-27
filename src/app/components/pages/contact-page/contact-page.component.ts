@@ -12,4 +12,8 @@ export class ContactPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchClassApplied = false;
+  searchToggleClass() {
+      this.searchClassApplied = !this.searchClassApplied;
+  }
 }
