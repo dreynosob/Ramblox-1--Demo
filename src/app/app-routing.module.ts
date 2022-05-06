@@ -43,7 +43,8 @@ import { HomepageNineComponent } from './components/pages/homepage-nine/homepage
 import { HomepageTenComponent } from './components/pages/homepage-ten/homepage-ten.component';
 
 const routes: Routes = [
-    {path: '', component: HomepageOneComponent},
+   // {path: '', component: HomepageOneComponent},
+    { path: '', redirectTo: 'home-two', pathMatch: 'full' },
     {path: 'home-two', component: HomepageTwoComponent},
     {path: 'home-three', component: HomepageThreeComponent},
     {path: 'home-four', component: HomepageFourComponent},
